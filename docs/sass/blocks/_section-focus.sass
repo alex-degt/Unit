@@ -1,0 +1,107 @@
+.section-focus
+	position: relative
+	padding-top: 73px
+	padding-bottom: 25px
+	background-color: #fff
+	border-top: 1px solid #e0dede
+	overflow: hidden
+	&:before
+		position: absolute
+		content: ""
+		display: block
+		width: 68px
+		height: 68px
+		top: 0
+		left: 50%
+		transform: translate(-50%, -50%) rotate(45deg)
+		background-color: #a4eecb
+	@media (min-width: 798px)
+		padding-top: 57px
+		padding-bottom: 0
+		&:before
+			display: none
+	@media (min-width: 1230px)
+		padding-top: 80px
+		padding-bottom: 1px
+		&:before
+			display: block
+			width: 187px
+			height: 187px
+			top: 50%
+			left: auto
+			right: -30px
+			transform: translate(55%, -55%) rotate(45deg)
+
+.section-focus__row
+	display: flex
+	flex-direction: column-reverse
+	justify-content: space-between
+	align-items: center
+	@media (min-width: 798px)
+		flex-direction: row
+		justify-content: space-around
+	@media (min-width: 1230px)
+		align-items: center
+		justify-content: space-between
+
+.section-focus__img-wrapper
+	position: relative
+	max-width: 470px
+	@media (min-width: 798px)
+		width: 264px
+		height: 505px
+	@media (min-width: 1230px)
+		width: 470px
+		height: 731px
+
+.section-focus__img
+	position: static
+	max-width: 100%
+	transform: translateX(-4%)
+	@media (min-width: 798px)
+		position: absolute
+		top: 0
+		right: 0
+		max-width: unset
+		height: 518px
+		transform: none
+	@media (min-width: 1230px)
+		transform: none
+		height: auto
+
+.section-focus__content
+	max-width: 470px
+	text-align: center
+	padding-bottom: 50px
+	@media (min-width: 798px)
+		padding-bottom: 130px
+		width: 55%
+		max-width: 383px
+		text-align: left
+	@media (min-width: 1230px)
+		padding-bottom: 125px
+		max-width: 473px
+
+.section-focus__title
+	margin-bottom: 32px
+	@media (min-width: 1230px)
+		margin-bottom: 44px
+
+.section-focus__header
+	margin-bottom: 35px
+	@media (min-width: 798px)
+		margin-bottom: 19px
+	@media (min-width: 1230px)
+		margin-bottom: 43px
+
+.section-focus__text
+	p
+		line-height: 24px
+	@media (min-width: 798px)
+		p
+			line-height: 30px
+	@media (min-width: 1230px)
+
+
+
+

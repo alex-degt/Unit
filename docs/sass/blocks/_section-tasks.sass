@@ -1,0 +1,99 @@
+.section-tasks
+	position: relative
+	padding-top: 73px
+	padding-bottom: 44px
+	background-color: #fff
+	&:before
+		position: absolute
+		content: ""
+		display: block
+		width: 68px
+		height: 68px
+		top: 0
+		left: 50%
+		transform: translate(-50%, -50%) rotate(45deg)
+		background-color: #a4eecb
+	@media (min-width: 798px)
+		padding-top: 65px
+		&:before
+			display: none
+	@media (min-width: 1230px)
+		padding-top: 94px
+		padding-bottom: 24px
+		&:before
+			display: block
+			width: 187px
+			height: 187px
+			top: 50%
+			left: -35px
+			right: auto
+			transform: translate(-52%, -52%) rotate(45deg)
+
+.section-tasks__wrapper
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	text-align: center
+	@media (min-width: 798px)
+		flex-direction: row-reverse
+		align-items: flex-start
+		text-align: left
+		justify-content: flex-start
+	@media (min-width: 1230px)
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+
+.section-tasks-content
+	max-width: 380px
+	@media (min-width: 798px)
+		width: 55%
+		max-width: unset
+		padding-top: 21px
+		padding-right: 30px
+	@media (min-width: 1230px)
+		padding: 15px 15px 15px 97px
+		& > div
+			width: 470px
+
+.section-tasks__title
+	margin-bottom: 33px
+	@media (min-width: 798px)
+		margin-bottom: 37px
+	@media (min-width: 1230px)
+		margin-bottom: 36px
+
+.section-tasks__header
+	margin-bottom: 34px
+	@media (min-width: 798px)
+		margin-bottom: 15px
+	@media (min-width: 1230px)
+		margin-bottom: 41px
+
+.section-tasks__text
+	margin-bottom: 50px
+	p
+		line-height: 24px
+	@media (min-width: 798px)
+		margin-bottom: 0
+		p
+			line-height: 30px
+
+.section-tasks__image
+	max-width: 202px
+	img
+		margin: 0 auto
+		display: block
+		width: 100%
+		height: auto
+	@media (min-width: 798px)
+		max-width: unset
+		width: 36.6%
+		margin-right: 32px
+	@media (min-width: 1230px)
+		width: 30.4%
+		margin-left: 20px
+		margin-right: auto
+
+

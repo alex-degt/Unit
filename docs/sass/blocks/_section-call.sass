@@ -1,0 +1,51 @@
+.section-call
+	position: relative
+	padding-top: 68px
+	padding-bottom: 75px
+	background-color: #4ba17e
+	background-image: url(../img/backgrounds/bg-call.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: top
+	z-index: 1
+	&:before
+		content: ""
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(10, 130, 78, 0.7)
+
+	@media (min-width: 798px)
+		padding-bottom: 79px
+	@media (min-width: 1230px)
+		padding-top: 78px
+		padding-bottom: 90px
+
+.section-call__content
+	position: relative
+	text-align: center
+
+.section-call__title
+	margin: 0
+	margin-bottom: 31px
+	width: 100%
+	text-align: center
+	font-size: 22px
+	font-weight: 500
+	line-height: 1.5
+	color: #fff
+	@media (min-width: 798px)
+		margin-bottom: 50px
+	@media (min-width: 1230px)
+		margin-bottom: 45px
+
+.white-button
+	padding: 0 43px
+	background-color: #fff
+	color: #2bb279
+	&:hover, &:focus
+		outline: none
+		background-color: darken(#fff, 80%)
